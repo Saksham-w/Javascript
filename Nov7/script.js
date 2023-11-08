@@ -34,6 +34,8 @@
 // console.log(obj1)
 
 // var let const diff
+// function scoped
+
 // function func1() {
 //   let a = 1
 //   if (true) {
@@ -43,3 +45,15 @@
 //   console.log(b)
 // }
 // func1()
+
+// bracket scoped
+ function func(){
+    let a = 3
+    for(var i=0;i<4;i++)
+    {
+        let b=4
+        console.log(a) // a is printed as it is inside the for bracket
+    }
+    console.log(b)// b is not printed as it is outside let b=4 bracket
+ }
+ func()
