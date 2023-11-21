@@ -1,3 +1,9 @@
+// **Async JS**
+
+// - Promises
+//   - A promise either get resolved or gets rejected or is still pending
+// - then and catch
+
 // Promise
 
 // explanation 1
