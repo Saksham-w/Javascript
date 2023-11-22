@@ -1,0 +1,86 @@
+/* Write a JavaScript function to add an item to the end of an array. Use the array [1, 2, 3] and add 4 to it. */
+function addItemToEnd(array, item) {
+    array.push(item);
+    return array;
+  }
+  
+  let myArray1 = [1, 2, 3];
+  addItemToEnd(myArray1, 4);
+  
+  console.log(myArray1); // Output: [1, 2, 3, 4]
+
+// How do you find the length of the array [10, 20, 30, 40, 50] in JavaScript?
+function getArrayLengthUsingForEach(array) {
+    let length = 0;
+  
+    array.forEach(function(element) {
+      length++;
+    });
+  
+    return length;
+  }
+  
+  let myArray2 = [10, 20, 30, 40, 50];
+  let arrayLength = getArrayLengthUsingForEach(myArray2);
+  
+  console.log(arrayLength);
+
+//   Write a JavaScript function to remove the first element of the array [1, 2, 3] and return the new array.
+function removeFirstElement(array) {
+    array.shift();
+    return array;
+  }
+  
+  
+  let myArray3 = [1, 2, 3];
+  let newArray = removeFirstElement(myArray3);
+
+  console.log(newArray); 
+
+//   Create a JavaScript function that reverses the array [1, 2, 3, 4, 5].
+function reverseArrayUsingForEach(originalArray) {
+    let reversedArray = [];
+  
+    originalArray.forEach(function(element) {
+      reversedArray.unshift(element);
+    });
+  
+    return reversedArray;
+  }
+  
+  let myArray4 = [1, 2, 3, 4, 5];
+  let reversedArray = reverseArrayUsingForEach(myArray4);
+  
+  console.log(reversedArray); 
+
+//   Write a JavaScript function to check if an element exists in the array [1, 2, 3, 4, 5]. Check for the element 3.
+
+function doesElementExist(array, element) {
+    return array.includes(element);
+  }
+  
+  let myArray5 = [1, 2, 3, 4, 5];
+  let elementToCheck = 3;
+  
+  if (doesElementExist(myArray5, elementToCheck)) {
+    console.log(`${elementToCheck} exists in the array.`);
+  } else {
+    console.log(`${elementToCheck} does not exist in the array.`);
+  }
+
+
+//   How do you access the value of the property age in the object {name: 'Alice', age: 25}?
+  let person = {name: 'Alice', age: 25};
+
+  let ageValue = person.age;
+  
+  console.log(ageValue);
+
+//   Add a property country with the value USA to the object {name: 'John', age: 30}.
+let person1 = {name: 'John', age: 30};
+
+person1.country = 'USA';
+
+console.log(person1);
+
+// Check if a key  named 'email' exists in the object {name: 'Sarah', email: 'sarah@example.com'}.
