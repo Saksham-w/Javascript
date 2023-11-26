@@ -1,4 +1,4 @@
-/* Write a JavaScript function to add an item to the end of an array. Use the array [1, 2, 3] and add 4 to it. */
+/* 1.Write a JavaScript function to add an item to the end of an array. Use the array [1, 2, 3] and add 4 to it. */
 function addItemToEnd(array, item) {
     array.push(item);
     return array;
@@ -9,7 +9,7 @@ function addItemToEnd(array, item) {
   
   console.log(myArray1); // Output: [1, 2, 3, 4]
 
-// How do you find the length of the array [10, 20, 30, 40, 50] in JavaScript?
+// 2.How do you find the length of the array [10, 20, 30, 40, 50] in JavaScript?
 function getArrayLengthUsingForEach(array) {
     let length = 0;
   
@@ -25,7 +25,7 @@ function getArrayLengthUsingForEach(array) {
   
   console.log(arrayLength);
 
-//   Write a JavaScript function to remove the first element of the array [1, 2, 3] and return the new array.
+// 3. Write a JavaScript function to remove the first element of the array [1, 2, 3] and return the new array.
 function removeFirstElement(array) {
     array.shift();
     return array;
@@ -37,7 +37,7 @@ function removeFirstElement(array) {
 
   console.log(newArray); 
 
-//   Create a JavaScript function that reverses the array [1, 2, 3, 4, 5].
+// 4.Create a JavaScript function that reverses the array [1, 2, 3, 4, 5].
 function reverseArrayUsingForEach(originalArray) {
     let reversedArray = [];
   
@@ -53,7 +53,7 @@ function reverseArrayUsingForEach(originalArray) {
   
   console.log(reversedArray); 
 
-//   Write a JavaScript function to check if an element exists in the array [1, 2, 3, 4, 5]. Check for the element 3.
+// 5.Write a JavaScript function to check if an element exists in the array [1, 2, 3, 4, 5]. Check for the element 3.
 
 function doesElementExist(array, element) {
     return array.includes(element);
@@ -69,18 +69,56 @@ function doesElementExist(array, element) {
   }
 
 
-//   How do you access the value of the property age in the object {name: 'Alice', age: 25}?
+//  6. How do you access the value of the property age in the object {name: 'Alice', age: 25}?
   let person = {name: 'Alice', age: 25};
 
   let ageValue = person.age;
   
   console.log(ageValue);
 
-//   Add a property country with the value USA to the object {name: 'John', age: 30}.
+//  7.Add a property country with the value USA to the object {name: 'John', age: 30}.
 let person1 = {name: 'John', age: 30};
 
 person1.country = 'USA';
 
 console.log(person1);
 
-// Check if a key  named 'email' exists in the object {name: 'Sarah', email: 'sarah@example.com'}.
+// 8.Check if a key  named 'email' exists in the object {name: 'Sarah', email: 'sarah@example.com'}.
+let personn1 = {name: 'sarah', email:'sarah@example.com'}
+function checkKey(key , object){
+  return key in object
+}
+
+let checkKey1= checkKey('email',personn1)
+console.log('key exists in object' ,checkKey1)
+
+// check if given value exists in given object
+let personn2 = {name: 'saksham', address:'kathmandu'}
+function checkvalue(value , object){
+  let check=false
+  for(key in object){
+   if(value==object[key]){
+    check=true
+   }
+  }
+  return check
+}
+ 
+let checkvalue1= checkvalue('kathmandu',personn2)
+console.log('value exists in object' ,checkvalue1)
+
+// 9.Reverse a string
+let string ='saksham'
+function reversingString(str) {
+        
+  const arrayStrings = str.split("");
+         
+  const reversingArray = arrayStrings.reverse();
+       
+  const joinArray = reversingArray.join("");
+          
+  return joinArray;
+}
+        
+const result = reversingString(string);
+console.log(result);
